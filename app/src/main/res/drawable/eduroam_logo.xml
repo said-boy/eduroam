@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  
+  <!-- Background circle -->
+  <circle
+      android:cx="60"
+      android:cy="60"
+      android:radius="55"
+      android:fillColor="@color/primary_color"/>
+  
+  <!-- eduroam text -->
+  <text
+      android:x="60"
+      android:y="45"
+      android:text="eduroam"
+      android:textSize="14"
+      android:textStyle="bold"
+      android:fillColor="@android:color/white"
+      android:textAlign="center"/>
+  
+  <!-- WiFi signal icon -->
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M30,75l6,6c12,-12 31,-12 43,0l6,-6C73,63 47,63 30,75zM45,95l15,15 15,-15c-8,-8 -22,-8 -30,0zM38,85l6,6c8,-8 22,-8 30,0l6,-6C70,75 50,75 38,85z"/>
+
+</vector>
