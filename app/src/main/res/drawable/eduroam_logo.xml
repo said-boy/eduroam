@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  
+  <!-- Background circle -->
+  <circle
+      android:cx="60"
+      android:cy="60"
+      android:radius="55"
+      android:fillColor="@color/primary_color"/>
+  
+  <!-- WiFi signal arcs -->
+  <path
+      android:fillColor="@android:color/white"
+      android:strokeWidth="3"
+      android:strokeColor="@android:color/white"
+      android:pathData="M25,70 Q60,35 95,70"
+      android:fillType="nonZero"/>
+  
+  <path
+      android:fillColor="@android:color/white"
+      android:strokeWidth="3"
+      android:strokeColor="@android:color/white"
+      android:pathData="M35,75 Q60,50 85,75"
+      android:fillType="nonZero"/>
+      
+  <path
+      android:fillColor="@android:color/white"
+      android:strokeWidth="3"
+      android:strokeColor="@android:color/white"
+      android:pathData="M45,80 Q60,65 75,80"
+      android:fillType="nonZero"/>
+
+  <!-- Central dot -->
+  <circle
+      android:cx="60"
+      android:cy="85"
+      android:radius="4"
+      android:fillColor="@android:color/white"/>
+
+</vector>
