@@ -22,7 +22,7 @@ A simple Android application for connecting to eduroam WiFi networks using EAP-T
 
 ### Android Requirements
 - **Minimum SDK**: API 24 (Android 7.0)
-- **Target SDK**: API 33 (Android 13)
+- **Target SDK**: API 34 (Android 14)
 - **Permissions Required**:
   - `ACCESS_WIFI_STATE`
   - `CHANGE_WIFI_STATE`
