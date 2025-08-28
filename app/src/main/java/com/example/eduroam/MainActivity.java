@@ -20,6 +20,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText emailEditText;
@@ -135,9 +137,12 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             // Remove any existing eduroam configuration
-            for (WifiConfiguration existingConfig : wifiManager.getConfiguredNetworks()) {
-                if (existingConfig.SSID != null && existingConfig.SSID.equals("\"eduroam\"")) {
-                    wifiManager.removeNetwork(existingConfig.networkId);
+            List<WifiConfiguration> configuredNetworks = wifiManager.getConfiguredNetworks();
+            if (configuredNetworks != null) {
+                for (WifiConfiguration existingConfig : configuredNetworks) {
+                    if (existingConfig.SSID != null && existingConfig.SSID.equals("\"eduroam\"")) {
+                        wifiManager.removeNetwork(existingConfig.networkId);
+                    }
                 }
             }
 
